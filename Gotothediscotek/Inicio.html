@@ -17,7 +17,7 @@
         h1 {
             text-align: center;
             margin-top: 20px;
-            color: #b9ae1d;
+            color: #ffffff;
         }
 
         .mensaje {
@@ -123,6 +123,7 @@
         .navegacion {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
         }
 
@@ -141,12 +142,12 @@
     <h1>Everybody go to the CanchaTek</h1>
     <div class="mensaje">:Participantes:</div>
     <textarea id="jugadores" rows="10" cols="50" placeholder="Escribe o copia nombres de jugadores. Aquí"></textarea><br>
-    <button onclick="guardarYGenerarEquipos()">Equipos al Azar</button>
-    <span id="contador"></span><br>
     <div class="navegacion">
-        <button onclick="mostrarIntento(-1)">&lt; Anterior</button>
-        <button onclick="mostrarIntento(1)">Siguiente &gt;</button>
+        <button class="boton-navegacion" onclick="mostrarIntento(-1)">&lt; </button>
+        <button class="boton-equipos" onclick="guardarYGenerarEquipos()">Equipos al Azar</button>
+        <button class="boton-navegacion" onclick="mostrarIntento(1)"> &gt;</button>
     </div>
+    <span id="contador"></span><br>
     <div id="equipos">
         <div class="equipo" id="equipo1">
             <div class="colores">
